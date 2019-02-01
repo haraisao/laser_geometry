@@ -47,6 +47,8 @@
 #include <Eigen/Core>
 #include <sensor_msgs/PointCloud2.h>
 
+#include "exportdecl.h"
+
 namespace laser_geometry
 {
   // NOTE: invalid scan errors (will be present in LaserScan.msg in D-Turtle)
@@ -96,7 +98,7 @@ namespace laser_geometry
    * - channel_option::Distance - Create a channel named "distances" containing the distance from the laser to each point
    * - channel_option::Timestamp - Create a channel named "stamps" containing the specific timestamp at which each point was measured
    */
-  class LaserProjection
+  class LASER_GEOMETRY_DECL LaserProjection
     {
 
     public:
