@@ -49,6 +49,6 @@ install(DIRECTORY include/laser_geometry/
 if(WIN32)
 install(TARGETS ${PROJECT_NAME}
         RUNTIME DESTINATION ${CATKIN_GLOBAL_BIN_DESTINATION}
-        CONFIGURATIONS Release
+        CONFIGURATIONS ${CMAKE_BUILD_TYPE}
 )
 endif()
